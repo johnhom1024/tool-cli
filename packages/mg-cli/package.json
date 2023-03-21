@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./bin/cli.js",
+    "build": "tsc -p ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "commander": "^10.0.0"
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "execa": "^7.1.1"
   }
 }
