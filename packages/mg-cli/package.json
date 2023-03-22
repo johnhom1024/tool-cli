@@ -3,18 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "mg-cli": "./bin/cli.js"
+  },
   "scripts": {
     "test": "node ./bin/cli.js",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "dev": "tsc -w -p ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^18.15.5",
+    "@types/shelljs": "^0.8.11",
     "typescript": "^5.0.2"
   },
   "dependencies": {
     "commander": "^10.0.0",
-    "execa": "^7.1.1"
+    "shelljs": "^0.8.5"
   }
 }
