@@ -9,8 +9,10 @@ program
 
 program
   .option('-t --target <string>', '要合并到的目标分支，默认合并到dev', 'dev')
-  .action((str, options) => {
-    mergeBranch({ target: options.target })
+  .action((options) => {
+    const { target = '' } = options;
+    mergeBranch({ target })
   });
 
-program.parse();
+
+program.parse(process.argv);
