@@ -1,7 +1,7 @@
 {
-  "name": "mg-cli",
+  "name": "@johnhom/mg-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI to auto merge branch to target branch which is provided",
   "main": "index.js",
   "bin": {
     "mg-cli": "./bin/cli.js"
@@ -11,8 +11,11 @@
     "build": "tsc -p .",
     "dev": "tsc -w -p ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "merge CLI"
+  ],
+  "homepage": "https://github.com/johnhom1024/tool-cli/tree/main/packages/mg-cli",
+  "author": "johnhom",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.5",
