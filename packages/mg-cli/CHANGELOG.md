@@ -1,5 +1,11 @@
 # mg-cli
 
+## 1.0.1
+
+### Patch Changes
+
+- ecbe80d: 新增--push 参数
+
 ## 1.0.0
 
 ### Major Changes
