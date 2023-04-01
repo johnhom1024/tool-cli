@@ -8,11 +8,11 @@ program
   .version('1.0.0');
 
 program
-  .option('-t --target <string>', '要合并到的目标分支，默认合并到dev', 'dev')
+  .requiredOption('-t, --target <string>', '要合并到的目标分支')
+  .option('-p, --push', '合并后是否自动推送到远程')
   .action((options) => {
-    const { target = '' } = options;
-    mergeBranch({ target })
+    const { target = '', push = false } = options;
+    mergeBranch({ target, needPush: push });
   });
-
 
 program.parse(process.argv);
