@@ -6,6 +6,10 @@
   "bin": {
     "mg-cli": "./bin/cli.js"
   },
+  "files": [
+    "bin",
+    "dist"
+  ],
   "scripts": {
     "test": "node ./bin/cli.js",
     "build": "tsc -p .",
