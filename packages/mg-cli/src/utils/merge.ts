@@ -1,5 +1,5 @@
 import shell from 'shelljs';
-
+import { log, info, error } from '@johnhom/cli-shared-utils';
 // 命令结果不输出到终端
 shell.config.silent = false;
 // 设置第一次出错时退出，如果这里不设置，则不会触发reject
