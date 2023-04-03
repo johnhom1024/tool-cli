@@ -1,5 +1,11 @@
 # mg-cli
 
+## 1.0.2
+
+### Patch Changes
+
+- c099ec0: 修复下拉命令错误问题
+
 ## 1.0.1
 
 ### Patch Changes
