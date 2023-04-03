@@ -10,7 +10,9 @@ const spinner = ora();
 let lastMsg: Msg | null = null;
 let isPaused = false;
 
-export function logWithSpinner(symbol: string, msg: string) {
+export function logWithSpinner(msg: string):void;
+
+export function logWithSpinner(symbol: string, msg?: string):void {
   if (!msg) {
     msg = symbol;
     symbol = chalk.green('✔');
@@ -21,7 +23,7 @@ export function logWithSpinner(symbol: string, msg: string) {
       text: lastMsg.text,
     });
   }
-  spinner.text = ' ' + msg;
+  spinner.text = ' ' + msg + '\n';
   lastMsg = {
     symbol: symbol + ' ',
     text: msg,
@@ -34,7 +36,7 @@ export function logWithSpinner(symbol: string, msg: string) {
  * @param {boolean} persist 是否保持原本的文本
  * @return {*}
  */
-export function stopSpinner (persist?: boolean) {
+export function stopSpinner (persist = false) {
   if (!spinner.isSpinning) {
     return;
   }
