@@ -26,7 +26,7 @@ async function pullTargetBranch(targetBranch: string): Promise<void> {
     if (stdout) {
       // 执行pull
       console.log('执行下拉...');
-      await shell.exec(`git pull ${targetBranch} ${targetBranch}`);
+      await shell.exec('git pull');
     }
   } catch (error) {
     console.log('目标分支没有远程分支');
