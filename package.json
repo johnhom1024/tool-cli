@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "changeset": "changeset add",
-    "version-packages": "changeset version",
-    "package-publish": "changeset publish",
-    "build": "turbo build"
+    "changeset:add": "changeset add",
+    "changeset:version": "changeset version",
+    "changeset:publish": "turbo deploy && changeset publish",
+    "turbo:build": "turbo build"
   },
   "keywords": [],
   "author": "johnhom",
