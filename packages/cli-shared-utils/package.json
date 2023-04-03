@@ -2,20 +2,19 @@
   "name": "@johnhom/cli-shared-utils",
   "version": "1.0.2",
   "description": "shared utilities for @johnhom packages",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "node ./bin/cli.js",
     "build": "tsc -p .",
     "dev": "tsc -w -p ."
   },
   "keywords": [
-    "merge CLI"
+    "utilities"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "homepage": "https://github.com/johnhom1024/tool-cli/tree/main/packages/mg-cli",
+  "homepage": "https://github.com/johnhom1024/tool-cli/tree/main/packages/cli-shared-utils",
   "author": "johnhom",
   "license": "ISC",
   "devDependencies": {
@@ -23,8 +22,8 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "chalk": "^5.2.0",
-    "ora": "^6.3.0",
-    "strip-ansi": "^7.0.1"
+    "chalk": "4.1.2",
+    "ora": "5.4.1",
+    "strip-ansi": "6.0.1"
   }
 }
