@@ -4,6 +4,9 @@
 
 一个CLI，可以自动将当前分支合并到目标分支。
 
+
+<img src="https://github.com/johnhom1024/tool-cli/raw/main/packages/mg-cli/assets/example1.jpg" width="400">
+
 ## 全局安装
 
 ```
