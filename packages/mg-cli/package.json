@@ -18,6 +18,10 @@
   "keywords": [
     "merge CLI"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "homepage": "https://github.com/johnhom1024/tool-cli/tree/main/packages/mg-cli",
   "author": "johnhom",
   "license": "ISC",
