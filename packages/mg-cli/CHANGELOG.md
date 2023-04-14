@@ -1,5 +1,11 @@
 # mg-cli
 
+## 1.2.0
+
+### Minor Changes
+
+- a4347ed: 新增下拉当前分支的操作
+
 ## 1.1.0
 
 ### Minor Changes
