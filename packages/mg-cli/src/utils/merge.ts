@@ -57,6 +57,21 @@ export async function mergeBranch({ target = 'dev', needPush = false }) {
     return;
   }
 
+  // 下拉当前分支的代码
+  try {
+    const { stdout } = await shell.exec('git remote');
+    if (stdout) {
+      // 执行pull
+      logWithSpinner(`下拉当前分支的代码...`);
+      await shell.exec('git pull');
+      stopSpinner();
+      done('下拉完成');
+    }
+  } catch (error) {
+    info('当前分支没有远程分支');
+  }
+
+
   // 切换到目标分支
   info(`准备切换到目标分支：${target}`);
 
