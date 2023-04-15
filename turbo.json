@@ -7,6 +7,7 @@
     },
     "deploy": {
       "dependsOn": ["build"]
-    }
+    },
+    "dev": {}
   }
 }

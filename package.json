@@ -8,6 +8,7 @@
     "changeset:add": "changeset add",
     "changeset:version": "changeset version",
     "changeset:publish": "turbo deploy && changeset publish",
+    "dev": "turbo dev",
     "turbo:build": "turbo build"
   },
   "keywords": [],
