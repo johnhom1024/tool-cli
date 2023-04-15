@@ -13,7 +13,7 @@
   "scripts": {
     "test": "node ./bin/cli.js",
     "build": "tsc -p .",
-    "dev": "tsc -w -p ."
+    "dev": "rimraf ./dist && tsc -w -p ."
   },
   "keywords": [
     "merge CLI"
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@types/node": "^18.15.5",
     "@types/shelljs": "^0.8.11",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.2"
   },
   "dependencies": {
