@@ -1,5 +1,11 @@
 # mg-cli
 
+## 2.0.0
+
+### Major Changes
+
+- 5f8dc14: 重构代码结构
+
 ## 1.2.0
 
 ### Minor Changes
