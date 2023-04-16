@@ -1,6 +1,6 @@
 import { json, lines, install } from 'mrm-core';
 import _ from 'lodash';
-import { done, info, logWithSpinner, stopSpinner } from "@johnhom/cli-shared-utils";
+import { logWithSpinner, stopSpinner } from "@johnhom/cli-shared-utils";
 
 const task = async () => {
   // 加入对ts代码的eslint 配置
@@ -23,8 +23,8 @@ const task = async () => {
       eslintrc.set('extends', [eslintPreset, ..._.castArray(presets)]);
     }
   }
+
   eslintrc.save();
-  info('生成.eslintrc.js');
 
   // .eslintignore
   lines('.eslintignore').add(ignores).save();
@@ -33,7 +33,6 @@ const task = async () => {
   logWithSpinner('开始安装beauty配置的相关依赖...');
   install(packages, { dev: true });
   stopSpinner();
-  done('安装完成');
 
   return Promise.resolve();
 };
