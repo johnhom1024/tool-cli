@@ -1,0 +1,38 @@
+{
+  "name": "@johnhom/mrm-preset",
+  "version": "1.0.0",
+  "author": "johnhom",
+  "description": "MRM preset used by Johnhom for all packages",
+  "main": "build/config.json",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "dev": "rimraf ./build && tsc -w -p .",
+    "build": "rimraf ./build && tsc -p .",
+    "changeset:add": "changeset add",
+    "changeset:beta": "changeset pre enter beta",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish"
+  },
+  "keywords": [
+    "mrm mrm-preset"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "homepage": "https://github.com/johnhom1024/tool-cli/tree/main/packages/mrm-preset",
+  "license": "ISC",
+  "dependencies": {
+    "@johnhom/cli-shared-utils": "workspace:*",
+    "lodash": "^4.17.21",
+    "mrm-core": "^7.1.14"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.192",
+    "@types/node": "^18.15.11",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.3"
+  }
+}
