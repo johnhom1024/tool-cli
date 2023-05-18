@@ -26,8 +26,11 @@
   "license": "ISC",
   "dependencies": {
     "@johnhom/cli-shared-utils": "workspace:*",
+    "@types/prettier": "^2.7.2",
+    "comment-json": "^4.2.3",
     "lodash": "^4.17.21",
-    "mrm-core": "^7.1.14"
+    "mrm-core": "^7.1.14",
+    "prettier": "^2.8.8"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.192",

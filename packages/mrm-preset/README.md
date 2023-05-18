@@ -52,8 +52,21 @@ mrm packageJson --preset @johnhom/mrm-preset
 }
 ```
 
+## 调试
+
+将该项目clone到电脑上之后，在根目录执行：
+
+```
+pnpm dev
+```
+
+然后在mrm-preset文件夹内会生成`build`文件夹，我们拿到build文件夹的绝对路径，然后在某个项目内，执行：
+
+```
+mrm beauty --dir <build_path>
+```
 
 ## TODO
 
-- [ ] prettier 的预设配置
+- [x] prettier 的预设配置
 - [ ] husky 和 commitlint 的预设配置
