@@ -1,5 +1,11 @@
 # @johnhom/mrm-preset
 
+## 2.2.0
+
+### Minor Changes
+
+- 6a5b538: beauty 优化
+
 ## 2.1.0
 
 ### Minor Changes
