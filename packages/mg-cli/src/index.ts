@@ -12,10 +12,9 @@ program
 
 program
   .requiredOption('-t, --target <string>', '要合并到的目标分支')
-  .option('-p, --push', '合并后是否自动推送到远程')
   .action((options) => {
-    const { target = '', push = false } = options;
-    mergeProcess({ target, needPush: push });
+    const { target = '' } = options;
+    mergeProcess({ target});
   });
 
 program.parse(process.argv);
