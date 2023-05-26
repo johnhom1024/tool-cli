@@ -100,6 +100,6 @@ export function pushToRemote() {
     error('推送出现问题');
     shell.exit(-1);
   }
-
+  stopSpinner();
   done('推送到远程分支成功');
 }
