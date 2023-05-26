@@ -1,5 +1,11 @@
 # mg-cli
 
+## 2.3.0
+
+### Minor Changes
+
+- 44d1208: 新增推送功能
+
 ## 2.0.0
 
 ### Major Changes
