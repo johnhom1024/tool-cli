@@ -94,12 +94,12 @@ export function mergeBranch(sourceBranch: string, targetBranch: string) {
 
 // 推送当前分支到远程仓库
 export function pushToRemote() {
-  logWithSpinner('合并完毕，准备推送到远程仓库...');
+  logWithSpinner('准备推送到远程仓库...');
   const { code } = shell.exec('git push');
   if (code !== 0) {
     error('推送出现问题');
     shell.exit(-1);
   }
-
+  stopSpinner();
   done('推送到远程分支成功');
 }

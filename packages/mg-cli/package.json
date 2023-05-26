@@ -2,7 +2,14 @@
   "name": "@johnhom/mg-cli",
   "version": "2.0.0",
   "description": "CLI to auto merge branch to target branch which is provided",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "bin": {
     "mg-cli": "./bin/cli.js"
   },
@@ -12,8 +19,8 @@
   ],
   "scripts": {
     "test": "node ./bin/cli.js",
-    "build": "tsc -p .",
-    "dev": "rimraf ./dist && tsc -w -p ."
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rimraf ./dist && npm run build"
   },
   "keywords": [
     "merge CLI"
@@ -26,12 +33,18 @@
   "author": "johnhom",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/node": "^18.15.5",
     "@types/shelljs": "^0.8.11",
     "rimraf": "^5.0.0",
+    "rollup": "^3.23.0",
+    "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@inquirer/prompts": "^1.2.3",
     "@johnhom/cli-shared-utils": "workspace:*",
     "commander": "^10.0.0",
     "shelljs": "^0.8.5"
