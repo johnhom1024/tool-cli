@@ -1,6 +1,6 @@
 {
   "name": "@johnhom/mg-cli",
-  "version": "2.0.0",
+  "version": "2.3.0",
   "description": "CLI to auto merge branch to target branch which is provided",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
