@@ -45,7 +45,7 @@ mg-cli -t dev
 
 使用的示例图片如下：
 
-<img src="https://github.com/johnhom1024/tool-cli/raw/main/packages/mg-cli/assets/demo1.jpg" width="400">
+<img src="https://github.com/johnhom1024/tool-cli/raw/main/packages/mg-cli/assets/demo1.jpg" width="500">
 
 ## 安装
 
