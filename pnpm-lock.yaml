@@ -56,7 +56,7 @@ importers:
         version: 15.0.2(rollup@3.23.0)
       '@rollup/plugin-typescript':
         specifier: ^11.1.1
-        version: 11.1.1(rollup@3.23.0)(typescript@5.0.2)
+        version: 11.1.1(rollup@3.23.0)(tslib@2.5.2)(typescript@5.0.2)
       '@types/node':
         specifier: ^18.15.5
         version: 18.15.5
@@ -69,6 +69,9 @@ importers:
       rollup:
         specifier: ^3.23.0
         version: 3.23.0
+      tslib:
+        specifier: ^2.5.2
+        version: 2.5.2
       typescript:
         specifier: ^5.0.2
         version: 5.0.2
@@ -530,7 +533,7 @@ packages:
       rollup: 3.23.0
     dev: true
 
-  /@rollup/plugin-typescript@11.1.1(rollup@3.23.0)(typescript@5.0.2):
+  /@rollup/plugin-typescript@11.1.1(rollup@3.23.0)(tslib@2.5.2)(typescript@5.0.2):
     resolution: {integrity: sha512-Ioir+x5Bejv72Lx2Zbz3/qGg7tvGbxQZALCLoJaGrkNXak/19+vKgKYJYM3i/fJxvsb23I9FuFQ8CUBEfsmBRg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -546,6 +549,7 @@ packages:
       '@rollup/pluginutils': 5.0.2(rollup@3.23.0)
       resolve: 1.22.1
       rollup: 3.23.0
+      tslib: 2.5.2
       typescript: 5.0.2
     dev: true
 
@@ -2453,6 +2457,10 @@ packages:
   /trim-newlines@3.0.1:
     resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}
     engines: {node: '>=8'}
+    dev: true
+
+  /tslib@2.5.2:
+    resolution: {integrity: sha512-5svOrSA2w3iGFDs1HibEVBGbDrAY82bFQ3HZ3ixB+88nsbsWQoKqDRb5UBYAUPEzbBn6dAp5gRNXglySbx1MlA==}
     dev: true
 
   /tty-table@4.2.1:

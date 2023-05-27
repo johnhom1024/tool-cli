@@ -12,8 +12,9 @@
   ],
   "scripts": {
     "test": "node ./bin/cli.js",
-    "build": "rollup -c --bundleConfigAsCjs",
-    "dev": "rimraf ./dist && npm run build"
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && rollup -c --bundleConfigAsCjs",
+    "dev": "npm run clean && npm run build"
   },
   "keywords": [
     "merge CLI"
@@ -34,6 +35,7 @@
     "@types/shelljs": "^0.8.11",
     "rimraf": "^5.0.0",
     "rollup": "^3.23.0",
+    "tslib": "^2.5.2",
     "typescript": "^5.0.2"
   },
   "dependencies": {
