@@ -5,8 +5,8 @@ const pkg = require('../package.json');
 const program = new Command();
 
 program
-  .name('mg-cli')
-  .description('一个用来合并当前分支到对应分支的CLI工具')
+  .name('amg')
+  .description('一个自动合并分支的CLI工具')
   .version(pkg.version, '-v --version')
   .usage('[option]')
 

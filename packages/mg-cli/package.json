@@ -4,7 +4,7 @@
   "description": "CLI to auto merge branch to target branch which is provided",
   "main": "./dist/index.js",
   "bin": {
-    "mg-cli": "./bin/cli.js"
+    "amg": "./bin/cli.js"
   },
   "files": [
     "bin",

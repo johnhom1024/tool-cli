@@ -30,7 +30,7 @@ git push
 
 ```
 # 处于 feature/a 分支中
-mg-cli -t dev
+amg -t dev
 ```
 
 上述会按顺序进行如下操作：
@@ -61,9 +61,9 @@ npm install -g @johnhom/mg-cli
 ## 具体用法
 
 ```
-Usage: mg-cli [options]
+Usage: amg [options]
 
-一个用来合并当前分支到对应分支的CLI工具
+一个自动合并分支的CLI工具
 
 Options:
   -V, --version          output the version number
@@ -74,7 +74,7 @@ Options:
 假设你当前项目所在的分支为：`feature/a`，你想要把这个分支合并到`dev`，并自动上传到远程仓库，你只需要执行以下命令：
 
 ```
-mg-ci -t dev
+amg -t dev
 ```
 
 * -t --target 指定当前分支需要合并到的目标分支
@@ -88,7 +88,3 @@ mg-ci -t dev
 ```
 pnpm link --global --dir=./packages/mg-cli
 ```
-
-## TODO
-
-- [ ] 更换bin的名称为amg（缩短命令，更方便开发人员）
