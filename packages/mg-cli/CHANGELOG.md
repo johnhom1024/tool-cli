@@ -1,5 +1,11 @@
 # mg-cli
 
+## 3.0.0
+
+### Major Changes
+
+- 6ca70b7: 更换 bin 命令
+
 ## 2.3.0
 
 ### Minor Changes
