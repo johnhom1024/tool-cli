@@ -1,5 +1,11 @@
 # @johnhom/mrm-preset
 
+## 2.3.0
+
+### Minor Changes
+
+- a132190: 新增 commitlint 任务
+
 ## 2.2.0
 
 ### Minor Changes
