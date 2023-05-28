@@ -61,7 +61,7 @@ mrm packageJson --preset @johnhom/mrm-preset
 
 ### 使用场景
 
-1. 当你的项目刚创建时，推荐运行以下的命令：
+1. 当你的前端项目创建完毕（带有package.json和lock文件）想要添加eslint、prettier等一系列项目的基础设施，可以运行以下的命令：
 
 ```
 mrm base --preset @johnhom/mrm-preset
@@ -92,6 +92,7 @@ npm run husky:commitmsg
 ```
 
 运行完毕之后，就可以展开手脚着手开发项目了，无需再处理项目的一些基建配置。
+
 ## 调试
 
 将该项目clone到电脑上之后，在根目录执行：
