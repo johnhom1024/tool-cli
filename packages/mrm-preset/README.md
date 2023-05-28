@@ -1,8 +1,8 @@
 # @johnhom/mrm-preset
 
-根据 mrm 开发的项目配置文件的 preset。
+根据 [mrm](https://github.com/sapegin/mrm) 开发的项目配置文件 preset。
 
-包含的 preset 设置项：
+包含的 task 设置项：
 
 - beauty
 
@@ -12,11 +12,11 @@
 
 组合的task项：
 
-- base 包含(beauty, commitlint)
+- base 包含（beauty, commitlint）
 
 ## 使用方式
 
-首先全局安装`mrm`：
+首先需要全局安装`mrm`：
 
 ```
 pnpm i -g mrm
@@ -26,7 +26,7 @@ yarn global add mrm
 npm i -g mrm
 ```
 
-选择你想要的配置项，例如你想要使用`packageJson`这个配置项，则在你的项目文件夹根目录下，执行以下代码：
+然后选择你想要的task配置项，例如你想要使用`packageJson`这个配置项，则在你的项目文件夹根目录下，执行以下代码：
 
 ```
 mrm packageJson --preset @johnhom/mrm-preset
@@ -76,9 +76,9 @@ mrm base --preset @johnhom/mrm-preset
 - @commitlint/cli
 - @commitlint/config-conventional
 
-同时会自动生成以上包相应的配置文件。
+同时会自动生成相应的配置文件。
 
-由于husky的部分钩子需要手动生成，所以你可以跑一下package.json对应的script命令：
+由于husky的部分钩子需要手动触发，所以你可以跑一下package.json对应的script命令：
 
 ```
 # 初始化husky文件夹
