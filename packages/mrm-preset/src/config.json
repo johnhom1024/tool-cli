@@ -1,5 +1,5 @@
 {
   "aliases": {
-    "base": ["beauty"]
+    "base": ["beauty", "commitlint"]
   }
 }

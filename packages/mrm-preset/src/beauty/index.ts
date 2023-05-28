@@ -33,7 +33,7 @@ function eslintTask() {
   const packages = ['eslint', 'eslint-config-prettier', ...eslintPreset];
 
   let eslintConfig: Record<string, any> = {};
-  if (file('.eslintrc.js').exists()) {
+  if (file(legacyConfigFile).exists()) {
     eslintConfig = require(eslintConfigPath);
   }
 

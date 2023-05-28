@@ -8,6 +8,12 @@
 
 - packageJson
 
+- commitlint
+
+组合的task项：
+
+- base 包含(beauty, commitlint)
+
 ## 使用方式
 
 首先全局安装`mrm`：
@@ -52,6 +58,40 @@ mrm packageJson --preset @johnhom/mrm-preset
 }
 ```
 
+
+### 使用场景
+
+1. 当你的项目刚创建时，推荐运行以下的命令：
+
+```
+mrm base --preset @johnhom/mrm-preset
+```
+
+运行成功之后，你的项目将会自动安装以下的包：
+
+- eslint
+- prettier
+- husky
+- lint-staged
+- @commitlint/cli
+- @commitlint/config-conventional
+
+同时会自动生成以上包相应的配置文件。
+
+由于husky的部分钩子需要手动生成，所以你可以跑一下package.json对应的script命令：
+
+```
+# 初始化husky文件夹
+npm run postinstall
+
+# 添加pre-commit钩子
+npm run husky:precommit
+
+# 添加commit-msg的钩子
+npm run husky:commitmsg
+```
+
+运行完毕之后，就可以展开手脚着手开发项目了，无需再处理项目的一些基建配置。
 ## 调试
 
 将该项目clone到电脑上之后，在根目录执行：
@@ -69,4 +109,4 @@ mrm beauty --dir <build_path>
 ## TODO
 
 - [x] prettier 的预设配置
-- [ ] husky 和 commitlint 的预设配置
+- [x] husky 和 commitlint 的预设配置
