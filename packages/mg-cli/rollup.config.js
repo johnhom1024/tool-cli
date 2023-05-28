@@ -22,7 +22,7 @@ module.exports = defineConfig({
   plugins: [
     json(),
     // rollup 编译typescript
-    typescript({}),
+    typescript(),
     // 解析第三方依赖
     nodeResolve(),
     // commonjs一般与@rollup/plugin-node-resolve配合使用
