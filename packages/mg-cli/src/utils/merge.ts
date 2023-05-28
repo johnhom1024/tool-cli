@@ -24,7 +24,6 @@ export async function mergeProcess({ target = 'dev' }) {
   // 合并代码
   mergeBranch(sourceBranch, target);
   // 询问是否需要推送到远程
-  // const wantPushRemote = await question('是否要上传到远程分支？(y/n)\n');
   const pushRemote = await confirm({
     message: '是否要上传到远程分支？',
     default: true,

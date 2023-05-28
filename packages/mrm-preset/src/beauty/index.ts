@@ -42,7 +42,7 @@ function eslintTask() {
     ..._.castArray(eslintConfig.extends),
     ...eslintPreset,
   ]).filter((preset) => preset);
-  
+
   const configStr = stringify(eslintConfig, null, 2);
   // 加上module.exports导出
   const eslintConfigStr = 'module.exports = ' + configStr;

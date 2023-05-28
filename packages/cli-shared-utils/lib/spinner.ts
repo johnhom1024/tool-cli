@@ -8,11 +8,10 @@ interface Msg {
 
 const spinner = ora();
 let lastMsg: Msg | null = null;
-let isPaused = false;
 
-export function logWithSpinner(msg: string):void;
+export function logWithSpinner(msg: string): void;
 
-export function logWithSpinner(symbol: string, msg?: string):void {
+export function logWithSpinner(symbol: string, msg?: string): void {
   if (!msg) {
     msg = symbol;
     symbol = chalk.green('✔');
@@ -36,7 +35,7 @@ export function logWithSpinner(symbol: string, msg?: string):void {
  * @param {boolean} persist 是否保持原本的文本
  * @return {*}
  */
-export function stopSpinner (persist = false) {
+export function stopSpinner(persist = false) {
   if (!spinner.isSpinning) {
     return;
   }
@@ -50,8 +49,8 @@ export function stopSpinner (persist = false) {
     spinner.stop();
   }
   lastMsg = null;
-};
+}
 
-export function failSpinner (text: string) {
-  spinner.fail(text)
+export function failSpinner(text: string) {
+  spinner.fail(text);
 }
