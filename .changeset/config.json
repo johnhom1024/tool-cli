@@ -3,7 +3,7 @@
   "changelog": "@changesets/cli/changelog",
   "commit": true,
   "fixed": [],
-  "linked": [["@johnhom/*"]],
+  "linked": [["@johnhom/mrm-preset", "@johnhom/cli-shared-utils"], ["@johnhom/mg-cli", "@johnhom/cli-shared-utils"]],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
