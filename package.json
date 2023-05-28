@@ -14,6 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
+    "@johnhom/eslint-config-ts": "^0.3.2",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
     "turbo": "^1.8.8"
   }
 }
