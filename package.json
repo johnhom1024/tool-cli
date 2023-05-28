@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "changeset:add": "changeset add",
-    "publish-packages": "turbo run build && changeset version &&  changeset publish",
+    "publish-packages": "turbo run build && changeset version && changeset publish",
     "dev": "turbo dev",
     "turbo:build": "turbo run build"
   },
