@@ -1,20 +1,26 @@
-import { Command } from 'commander';
 import { mergeProcess } from './utils/merge';
 
 const pkg = require('../package.json');
-const program = new Command();
 
-program
-  .name('amg')
-  .description('一个自动合并分支的CLI工具')
-  .version(pkg.version, '-v --version')
-  .usage('[option]');
+import { cac } from 'cac';
 
-program
-  .requiredOption('-t, --target <string>', '要合并到的目标分支')
-  .action((options) => {
-    const { target = '' } = options;
-    mergeProcess({ target });
+const cli_name = 'amg';
+
+const cli = cac(cli_name);
+
+cli
+  .command('[target_branch]', 'merge current branch into target_branch')
+  .example('amg master    merge current branch into the branch which named "master"')
+  .action((targetBranch: string | undefined) => {
+    // 如果没有输入参数，则输出帮助信息
+    if (targetBranch === undefined) {
+      cli.outputHelp();
+    } else {
+      mergeProcess({ target: targetBranch });
+    }
   });
 
-program.parse(process.argv);
+cli.help();
+cli.version(pkg.version);
+
+cli.parse();

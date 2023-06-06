@@ -1,12 +1,12 @@
 # mg-cli
 
-(Auto) Merge CLI
+🚀 (Auto) Merge CLI
 
 Auto Merge CLI 是一个功能强大的命令行工具，旨在帮助开发者**自动拉取代码、合并分支、推送远程**等等操作。
 
-它提供了一种简单而高效的方式，通过`shelljs`库调用Node.js API，实现在shell中执行git相关的操作，无需人工一步步去操作git进行分支的切换和合并，以提高工作的效率。
+它提供了一种简单而高效的方式，通过[shelljs](https://github.com/shelljs/shelljs)库调用Node.js API，实现在shell中执行git相关的操作，无需人工一步步去操作git进行分支的切换和合并，以提高工作的效率。
 
-## 使用示例
+## 👀 使用示例
 
 背景：假设你完成了功能分支`feature/a`的开发，想要合并到测试分支`dev`，并且推到远程。
 
@@ -30,7 +30,7 @@ git push
 
 ```
 # 处于 feature/a 分支中
-amg -t dev
+amg dev
 ```
 
 上述会按顺序进行如下操作：
@@ -45,9 +45,9 @@ amg -t dev
 
 使用的示例图片如下：
 
-<img src="https://github.com/johnhom1024/tool-cli/raw/main/packages/mg-cli/assets/demo1.jpg" width="500">
+<img src="https://github.com/johnhom1024/tool-cli/raw/main/packages/mg-cli/assets/demo.jpg" width="500">
 
-## 安装
+## ⌛️ 安装
 
 全局安装
 
@@ -58,28 +58,33 @@ npm install -g @johnhom/mg-cli
 # yarn global add @johnhom/mg-cli
 ```
 
-## 具体用法
+## 💡 具体用法
 
 ```
-Usage: amg [options]
+Usage:
+  $ amg [target_branch]
 
-一个自动合并分支的CLI工具
+Commands:
+  [target_branch]  merge current branch into target_branch
+
+For more info, run any command with the `--help` flag:
+  $ amg --help
 
 Options:
-  -V, --version          output the version number
-  -t, --target <string>  要合并到的目标分支
-  -h, --help             display help for command
+  -h, --help     Display this message 
+  -v, --version  Display version number 
+
+Examples:
+amg master    把当前分支自动合并到master
 ```
 
 假设你当前项目所在的分支为：`feature/a`，你想要把这个分支合并到`dev`，并自动上传到远程仓库，你只需要执行以下命令：
 
 ```
-amg -t dev
+amg dev
 ```
 
-* -t --target 指定当前分支需要合并到的目标分支
-
-## 调试方式
+## ⏳ 调试方式
 
 使用pnpm link对当前项目链接到电脑的全局环境上，如果是在项目的根目录，则执行以下命令：
 

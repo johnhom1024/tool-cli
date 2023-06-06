@@ -41,7 +41,7 @@
   "dependencies": {
     "@inquirer/prompts": "^1.2.3",
     "@johnhom/cli-shared-utils": "workspace:*",
-    "commander": "^10.0.0",
+    "cac": "^6.7.14",
     "shelljs": "^0.8.5"
   }
 }
