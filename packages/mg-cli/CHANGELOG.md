@@ -1,5 +1,11 @@
 # mg-cli
 
+## 3.1.0
+
+### Minor Changes
+
+- ed5fb32: commanjs 更换成 cac
+
 ## 3.0.0
 
 ### Major Changes
