@@ -93,3 +93,9 @@ amg dev
 ```
 pnpm link --global --dir=./packages/mg-cli
 ```
+
+如果想要解除link，只需要 全局删除即可：
+
+```
+pnpm un -g @johnhom/mg-cli
+```
