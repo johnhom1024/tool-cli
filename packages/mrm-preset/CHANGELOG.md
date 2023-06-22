@@ -1,5 +1,11 @@
 # @johnhom/mrm-preset
 
+## 2.4.0
+
+### Minor Changes
+
+- 3ba7fa0: packageJson 新增几个字段
+
 ## 2.3.0
 
 ### Minor Changes

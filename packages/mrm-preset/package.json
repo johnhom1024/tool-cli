@@ -1,6 +1,6 @@
 {
   "name": "@johnhom/mrm-preset",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "author": "johnhom",
   "description": "MRM preset used by Johnhom for all packages",
   "main": "build/config.json",
