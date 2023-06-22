@@ -10,7 +10,14 @@ const task = () => {
     version: '1.0.0',
     description: '',
     author: '',
+    // 指定项目的入口，现在这个字段也可以用来指定es module入口
     main: 'index.js',
+    type: 'commonjs',
+    // 非官方字段， typescrpt用到的字段，
+    // 指定项目的es module入口
+    module: '',
+    exports: {},
+    types: '',
     files: ['index.js'],
     scripts: {},
     license: 'ISC',
